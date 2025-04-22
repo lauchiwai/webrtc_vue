@@ -1,37 +1,52 @@
-<<<<<<< HEAD
-# webrtc_vue
-=======
-# webrtc_web
 
-This template should help get you started developing with Vue 3 in Vite.
+# WebRTC 視訊通話前端應用
 
-## Recommended IDE Setup
+基於 Vue3 與 WebRTC 技術的即時視訊通話解決方案
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## 主要功能亮点
 
-## Type Support for `.vue` Imports in TS
+### 🎥 即時通訊
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+- 房間號加入機制
+- 雙向音視頻流傳輸
+- ICE 候選自動協商
+- 連線狀態即時監控
 
-## Customize configuration
+### 🎛 設備管理
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+- 音訊輸入設備即時切換
+- 影像輸入設備熱插拔
+- 音視頻軌道獨立開關控制
+- 設備列表自動偵測更新
 
-## Project Setup
+### ⏺ 媒體處理
 
-```sh
+- 遠端畫面即時錄製
+- 支援多種影片格式輸出
+- 通話畫面即時截圖
+- 錄影計時與自動保存
+
+## 技術架構
+
+| 技術領域    | 採用方案          |
+| ----------- | ----------------- |
+| 前端框架    | Vue3 + TypeScript |
+| 狀態管理    | Pinia             |
+| WebRTC 封裝 | 原生 API          |
+| 信令傳輸    | Socket.io-client  |
+| UI 元件庫   | Ant Design Vue    |
+
+## 環境要求
+
+- 現代瀏覽器（建議 Chrome 90+）
+- Node.js v16+
+- npm 8+
+
+## 快速啟動
+
+### 1. 安裝依賴
+
+```bash
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
 npm run dev
 ```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
->>>>>>> f1b9290 (Initial commit: WebRTC project with vue3)
