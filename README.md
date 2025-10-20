@@ -1,51 +1,49 @@
+# WebRTC Video Call Frontend Application
 
-# WebRTC 視訊通話前端應用
+A real-time video communication solution based on Vue3 and WebRTC technology.
 
-基於 Vue3 與 WebRTC 技術的即時視訊通話解決方案
+## Main Features
 
-## 主要功能亮点
+### 🎥 Real-time Communication
 
-### 🎥 即時通訊
+- Room number join mechanism
+- Bidirectional audio and video stream transmission
+- ICE candidate automatic negotiation
+- Real-time connection status monitoring
 
-- 房間號加入機制
-- 雙向音視頻流傳輸
-- ICE 候選自動協商
-- 連線狀態即時監控
+### 🎛 Device Management
 
-### 🎛 設備管理
+- Real-time audio input device switching
+- Independent audio and video track control
+- Automatic device list detection and updates
 
-- 音訊輸入設備即時切換
-- 音視頻軌道獨立開關控制
-- 設備列表自動偵測更新
+### ⏺ Media Processing
 
-### ⏺ 媒體處理
+- Real-time remote screen recording
+- Support for multiple video format outputs
+- Real-time call screen capture
+- Recording timer and automatic saving
 
-- 遠端畫面即時錄製
-- 支援多種影片格式輸出
-- 通話畫面即時截圖
-- 錄影計時與自動保存
+## Technical Architecture
 
-## 技術架構
+| Technology Area     | Solution               |
+| ------------------- | ---------------------- |
+| Frontend Framework  | Vue3 + TypeScript      |
+| State Management    | Pinia                  |
+| WebRTC Wrapper      | Native API             |
+| Signaling Transport | Socket.io-client       |
+| UI Component Library| Ant Design Vue         |
 
-| 技術領域    | 採用方案          |
-| ----------- | ----------------- |
-| 前端框架    | Vue3 + TypeScript |
-| 狀態管理    | Pinia             |
-| WebRTC 封裝 | 原生 API          |
-| 信令傳輸    | Socket.io-client  |
-| UI 元件庫   | Ant Design Vue    |
+## Environment Requirements
 
-## 環境要求
-
-- 現代瀏覽器（建議 Chrome 90+）
+- Modern browser (recommended Chrome 90+)
 - Node.js v16+
 - npm 8+
 
-## 快速啟動
+## Quick Start
 
-### 1. 安裝依賴
+### 1. Install Dependencies
 
 ```bash
 npm install
 npm run dev
-```
